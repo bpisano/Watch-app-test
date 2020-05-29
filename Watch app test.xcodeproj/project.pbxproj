@@ -16,6 +16,10 @@
 		50CD329A24813D46009ED2DB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD329924813D46009ED2DB /* ExtensionDelegate.swift */; };
 		50CD329C24813D47009ED2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CD329B24813D47009ED2DB /* Assets.xcassets */; };
 		50CD329F24813D47009ED2DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CD329E24813D47009ED2DB /* Preview Assets.xcassets */; };
+		50CD32B024813D7E009ED2DB /* Segmentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD32AF24813D7E009ED2DB /* Segmentable.swift */; };
+		50CD32B324813D9C009ED2DB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD32B224813D9C009ED2DB /* Models.swift */; };
+		50CD32B624813E13009ED2DB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD32B524813E13009ED2DB /* ContentViewModel.swift */; };
+		50CD32BA24813E94009ED2DB /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD32B924813E94009ED2DB /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		50CD329B24813D47009ED2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50CD329E24813D47009ED2DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50CD32A024813D47009ED2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CD32AF24813D7E009ED2DB /* Segmentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segmentable.swift; sourceTree = "<group>"; };
+		50CD32B224813D9C009ED2DB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		50CD32B524813E13009ED2DB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		50CD32B924813E94009ED2DB /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +126,9 @@
 		50CD329424813D46009ED2DB /* Watch app test WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				50CD329524813D46009ED2DB /* ContentView.swift */,
+				50CD32AE24813D72009ED2DB /* Protocols */,
+				50CD32B124813D94009ED2DB /* Models */,
+				50CD32B424813DF8009ED2DB /* Views */,
 				50CD329724813D46009ED2DB /* HostingController.swift */,
 				50CD329924813D46009ED2DB /* ExtensionDelegate.swift */,
 				50CD329B24813D47009ED2DB /* Assets.xcassets */,
@@ -134,6 +144,48 @@
 				50CD329E24813D47009ED2DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50CD32AE24813D72009ED2DB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				50CD32AF24813D7E009ED2DB /* Segmentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		50CD32B124813D94009ED2DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50CD32B224813D9C009ED2DB /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50CD32B424813DF8009ED2DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50CD32B824813E80009ED2DB /* PickerView */,
+				50CD32B724813E51009ED2DB /* ContentView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50CD32B724813E51009ED2DB /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				50CD32B524813E13009ED2DB /* ContentViewModel.swift */,
+				50CD329524813D46009ED2DB /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		50CD32B824813E80009ED2DB /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				50CD32B924813E94009ED2DB /* PickerView.swift */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +318,11 @@
 			files = (
 				50CD329824813D46009ED2DB /* HostingController.swift in Sources */,
 				50CD329624813D46009ED2DB /* ContentView.swift in Sources */,
+				50CD32B624813E13009ED2DB /* ContentViewModel.swift in Sources */,
 				50CD329A24813D46009ED2DB /* ExtensionDelegate.swift in Sources */,
+				50CD32B024813D7E009ED2DB /* Segmentable.swift in Sources */,
+				50CD32BA24813E94009ED2DB /* PickerView.swift in Sources */,
+				50CD32B324813D9C009ED2DB /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
